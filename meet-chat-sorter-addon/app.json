@@ -9,7 +9,7 @@
       },
       "addOnUi": {
         "standaloneUi": {
-          "url": "YOUR_ADDON_HOSTING_URL/index.html",
+          "url": "https://tritonobscure-emeraldzipper.codio.io/meet-chat-sorter-addon/index.html",
           "width": 400,
           "height": 600
         }
@@ -18,14 +18,14 @@
   ],
   "dependencies": {
     "web": {
-      "url": "YOUR_ADDON_HOSTING_URL"
+      "url": "https://tritonobscure-emeraldzipper.codio.io/meet-chat-sorter-addon"
     }
   },
   "icon": {
-    "url": "YOUR_ADDON_HOSTING_URL/icons/icon_48.png"
+    "url": "https://tritonobscure-emeraldzipper.codio.io/meet-chat-sorter-addon/icons/icon_48.png"
   },
-  "organizationHomepageUrl": "YOUR_ORGANIZATION_HOMEPAGE_URL",
-  "privacyPolicyUrl": "YOUR_PRIVACY_POLICY_URL",
-  "termsOfServiceUrl": "YOUR_TERMS_OF_SERVICE_URL",
-  "supportUrl": "YOUR_SUPPORT_URL"
+  "organizationHomepageUrl": "https://github.com/mohitchandarana",
+  "privacyPolicyUrl": "https://gist.github.com/mohitchandarana/1d279c5182885f8ba47b9bc17adc727a",
+  "termsOfServiceUrl": "https://gist.github.com/mohitchandarana/1d279c5182885f8ba47b9bc17adc727a",
+  "supportUrl": "mailto: mchandarana@codio.com"
 }

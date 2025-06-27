@@ -1,0 +1,156 @@
+/* Custom font import */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+/* Basic reset and font application */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f0f2f5; /* Light gray background */
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Align to top for better content flow */
+    /* Removed width, max-height, overflow-y as Meet Add-on environment handles sizing */
+    box-sizing: border-box; /* Include padding in element's total width and height */
+    margin: 0; /* Remove default body margin */
+    padding: 0.75rem; /* Reduced padding around the container */
+}
+
+.container {
+    background-color: #ffffff;
+    border-radius: 0.75rem; /* Slightly less rounded corners for a modern feel */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Softer, elevated shadow */
+    padding: 1.25rem; /* Adjusted padding */
+    width: 100%; /* Take full width of parent */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem; /* Consistent spacing between major sections */
+}
+
+h1 {
+    font-size: 1.375rem; /* Slightly smaller heading for compactness */
+    font-weight: 700;
+    color: #1f2937;
+    margin-bottom: 0.25rem; /* Reduced bottom margin */
+}
+
+p {
+    font-size: 0.75rem; /* Smaller paragraph text for quick info */
+    color: #4b5563;
+    margin-bottom: 0.5rem;
+}
+
+label {
+    font-size: 0.75rem; /* Smaller label font */
+    font-weight: 600;
+    color: #374151; /* Darker gray for labels */
+    text-align: left;
+    margin-bottom: 0.25rem;
+}
+
+textarea {
+    width: 100%;
+    min-height: 90px; /* Adjusted minimum height for input/output */
+    padding: 0.625rem 0.75rem; /* Consistent padding */
+    border: 1px solid #d1d5db;
+    border-radius: 0.375rem; /* Slightly less rounded corners */
+    resize: vertical;
+    font-size: 0.875rem; /* Standard text size */
+    line-height: 1.4;
+    color: #1f2937;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+textarea:focus {
+    outline: none;
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.3); /* Softer focus ring */
+}
+
+/* Base button styling */
+.action-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem 0.8rem; /* Further reduced padding for smaller buttons */
+    border-radius: 0.625rem; /* Consistent rounded corners */
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.1s, box-shadow 0.2s;
+    font-size: 0.8rem; /* Slightly smaller button text size */
+    border: none;
+    white-space: nowrap;
+    width: 100%; /* Full width by default */
+    color: white; /* Explicitly force text color to white */
+}
+
+/* Icon styling within buttons */
+.action-button svg {
+    width: 0.65rem; /* Even smaller icon width */
+    height: 0.65rem; /* Even smaller icon height */
+    margin-right: 0.2rem; /* Reduced margin */
+    flex-shrink: 0; /* Prevent icon from shrinking */
+}
+
+/* Specific button styles */
+.sort-button {
+    background-color: #4f46e5;
+    box-shadow: 0 2px 8px rgba(79, 70, 229, 0.3);
+}
+.sort-button:hover {
+    background-color: #4338ca;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(79, 70, 229, 0.4);
+}
+.sort-button:active {
+    transform: translateY(0);
+    box-shadow: 0 1px 4px rgba(79, 70, 229, 0.2);
+}
+
+.copy-button {
+    background-color: #22c55e;
+    box-shadow: 0 2px 8px rgba(34, 197, 94, 0.3);
+}
+.copy-button:hover {
+    background-color: #16a34a;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(34, 197, 94, 0.4);
+}
+.copy-button:active {
+    transform: translateY(0);
+    box-shadow: 0 1px 4px rgba(34, 197, 94, 0.2);
+}
+
+.paste-button { /* This class is no longer used in HTML but kept for completeness if needed elsewhere */
+    background-color: #2563eb;
+    box-shadow: 0 2px 8px rgba(37, 99, 235, 0.3);
+}
+.paste-button:hover {
+    background-color: #1d4ed8;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.4);
+}
+.paste-button:active {
+    transform: translateY(0);
+    box-shadow: 0 1px 4px rgba(37, 99, 235, 0.2);
+}
+
+.message-box {
+    background-color: #eff6ff;
+    color: #1d4ed8;
+    padding: 0.5rem 0.75rem;
+    border-radius: 0.375rem;
+    margin-top: 0.5rem;
+    font-size: 0.7rem;
+    display: none;
+    text-align: left;
+    border: 1px solid;
+}
+.message-box.show {
+    display: block;
+}
+
+/* Responsive adjustments for button group on small screens */
+@media (min-width: 640px) { /* sm breakpoint in Tailwind */
+    .flex-col.sm\\:flex-row > .action-button {
+        width: 50%; /* Make buttons take half width on wider screens */
+    }
+}

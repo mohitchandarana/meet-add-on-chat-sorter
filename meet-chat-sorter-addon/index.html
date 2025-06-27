@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meet Chat Sorter Add-on</title>
+    <link rel="stylesheet" href="style.css">
+    </head>
+<body class="addon-body">
+    <div class="container">
+        <h1 class="text-xl font-bold text-gray-800 mb-1">Meet Chat Sorter</h1>
+
+        <p class="text-xs text-gray-600">
+            Paste chat messages (Name, Time, Response), click Sort, then copy.
+        </p>
+
+        <div class="input-section">
+            <label for="chatInput" class="block text-left text-gray-700 text-xs font-semibold mb-1">
+                Paste Messages Here:
+            </label>
+            <textarea
+                id="chatInput"
+                class="w-full min-h-[90px] p-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500 text-gray-800 resize-y text-sm"
+                placeholder="Example:
+Lola Valente
+10:33 AM
+Pernil
+Jairo Velásquez
+10:33 AM
+Italian
+Sindhu Ramachandra
+10:34 AM
+Japanese"
+            ></textarea>
+        </div>
+
+        <button
+            id="sortButton"
+            class="action-button sort-button bg-indigo-600 hover:bg-indigo-700 text-white"
+        >
+            <svg class="w-2.5 h-2.5 mr-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 4h13M3 8h9m-9 4h6m4 0l7-7m0 0l7 7m-7-7v14"></path>
+            </svg>
+            Sort Messages
+        </button>
+
+        <div id="messageBox" class="message-box hidden"></div>
+
+        <div class="output-section mt-1">
+            <label for="sortedOutput" class="block text-left text-gray-700 text-xs font-semibold mb-1">
+                Sorted Messages:
+            </label>
+            <textarea
+                id="sortedOutput"
+                class="w-full min-h-[90px] p-2 border border-gray-300 rounded-md bg-gray-50 text-gray-800 resize-y text-sm"
+                readonly
+                placeholder="Sorted messages will appear here..."
+            ></textarea>
+            <div class="flex flex-col sm:flex-row sm:space-x-2 mt-3 justify-center">
+                <button
+                    id="copyButton"
+                    class="action-button copy-button bg-green-500 hover:bg-green-600 text-white"
+                >
+                    <svg class="w-2.5 h-2.5 mr-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 5H6a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2v-1M8 5a2 2 0 002 2h2a2 2 0 002-2M8 5a2 2 0 012-2h2a2 2 0 012 2m0 0h2a2 2 0 012 2v3m2 0h-2M10 12h4m-2 4v-4"></path>
+                    </svg>
+                    Copy Sorted Messages
+                </button>
+            </div>
+        </div>
+    </div>
+    <script src="https://www.gstatic.com/meet/addons/addon.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

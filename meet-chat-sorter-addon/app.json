@@ -1,0 +1,31 @@
+{
+  "addonName": {
+    "defaultValue": "Meet Chat Sorter"
+  },
+  "entryPoints": [
+    {
+      "label": {
+        "defaultValue": "Chat Sorter"
+      },
+      "addOnUi": {
+        "standaloneUi": {
+          "url": "YOUR_ADDON_HOSTING_URL/index.html",
+          "width": 400,
+          "height": 600
+        }
+      }
+    }
+  ],
+  "dependencies": {
+    "web": {
+      "url": "YOUR_ADDON_HOSTING_URL"
+    }
+  },
+  "icon": {
+    "url": "YOUR_ADDON_HOSTING_URL/icons/icon_48.png"
+  },
+  "organizationHomepageUrl": "YOUR_ORGANIZATION_HOMEPAGE_URL",
+  "privacyPolicyUrl": "YOUR_PRIVACY_POLICY_URL",
+  "termsOfServiceUrl": "YOUR_TERMS_OF_SERVICE_URL",
+  "supportUrl": "YOUR_SUPPORT_URL"
+}

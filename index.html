@@ -4,8 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meet Chat Sorter Add-on</title>
+    <!-- Link to your local CSS file -->
     <link rel="stylesheet" href="style.css">
-    </head>
+    <!-- You might still want to include Tailwind if you use it in style.css -->
+    <!-- For simplicity, I'm assuming style.css will contain all necessary styling -->
+</head>
 <body class="addon-body">
     <div class="container">
         <h1 class="text-xl font-bold text-gray-800 mb-1">Meet Chat Sorter</h1>
@@ -69,7 +72,9 @@ Japanese"
             </div>
         </div>
     </div>
+    <!-- Google Meet Add-on SDK MUST be loaded FIRST -->
     <script src="https://www.gstatic.com/meet/addons/addon.js"></script>
+    <!-- Your Add-on's script now loads AFTER the SDK -->
     <script src="script.js"></script>
 </body>
 </html>

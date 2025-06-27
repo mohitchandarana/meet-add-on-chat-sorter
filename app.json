@@ -9,7 +9,7 @@
       },
       "addOnUi": {
         "standaloneUi": {
-          "url": "https://tritonobscure-emeraldzipper.codio.io/meet-chat-sorter-addon/index.html",
+          "url": "https://mohitchandarana.github.io/meet-add-on-chat-sorter/index.html",
           "width": 400,
           "height": 600
         }
@@ -18,11 +18,11 @@
   ],
   "dependencies": {
     "web": {
-      "url": "https://tritonobscure-emeraldzipper.codio.io/meet-chat-sorter-addon"
+      "url": "https://mohitchandarana.github.io/meet-add-on-chat-sorter"
     }
   },
   "icon": {
-    "url": "https://tritonobscure-emeraldzipper.codio.io/meet-chat-sorter-addon/icons/icon_48.png"
+    "url": "https://mohitchandarana.github.io/meet-add-on-chat-sorter/icon_48.png"
   },
   "organizationHomepageUrl": "https://github.com/mohitchandarana",
   "privacyPolicyUrl": "https://gist.github.com/mohitchandarana/1d279c5182885f8ba47b9bc17adc727a",
